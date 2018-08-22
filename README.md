@@ -10,7 +10,8 @@ An R package that provides access to data from [Living Atlases](https://living-a
 On startup the package is configured to access data from the [Atlas of Living Australia](https://ala.org.au). Users can direct the package to use data from other installations, e.g. the UK's [National Biodiversity Network](https://nbnatlas.org/):
 
 ```{r eval = FALSE}
+library(livingatlases)
 la_config(installation = "uk")
 ```
 
-See `help("config")` for more information.
+See `help("la_config")` for more information.
