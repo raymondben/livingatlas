@@ -6,6 +6,7 @@
 
 An R package that provides access to data from [Living Atlases](https://living-atlases.gbif.org/) servers.
 
+## Usage
 
 On startup the package is configured to access data from the [Atlas of Living Australia](https://ala.org.au). Users can direct the package to use data from other installations, e.g. the UK's [National Biodiversity Network](https://nbnatlas.org/):
 
@@ -15,3 +16,9 @@ la_config(installation = "uk")
 ```
 
 See `help("la_config")` for more information.
+
+
+## Developers
+
+To make the package aware of a new Living Atlas server installation, add a configuration JSON file to the `inst/configurations` directory. See the README and existing files for guidance.
+
