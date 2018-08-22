@@ -21,7 +21,7 @@ test_that("Installation json files are present and valid", {
     d <- dir(system.file("configurations", package = "livingatlases"), full.names = TRUE)
     d <- d[grepl("\\.json$", d)]
     if (length(d) < 1) stop("no installation configuration JSON files found")
-    expect_that(length(d) == length(expected_insts))
+    expect_equal(length(d), length(expected_insts))
     expect_identical(sort(sub("\\.json$", "", basename(d))), sort(expected_insts))
     for (cf in d) {
         blah <- jsonlite::fromJSON(cf)
