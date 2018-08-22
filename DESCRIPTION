@@ -1,0 +1,22 @@
+Package: livingatlases
+Type: Package
+Title: Living Atlases Data and Resources in R
+Version: 0.1
+Authors@R: c(person("Ben", "Raymond", email = "ben_ala@untan.gl", role=c("aut", "cre")))
+Description: livingatlases provides tools to enable users
+    of biodiversity information to find, access, combine and visualise data from
+    Living Atlases installations.
+Depends:
+    ALA4R
+Imports:
+    assertthat
+Suggests:
+    covr,
+    knitr,
+    testthat
+License: MPL-2.0
+URL: https://github.com/raymondben/livingatlases
+LazyLoad: yes
+LazyData: yes
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
