@@ -49,7 +49,13 @@ la_config <- function(...) {
     if ("installation" %in% names(z)) {
         if (is.character(z$installation)) {
             assert_that(is.string(z$installation))
-            new_info <- installation_info(z$installation)
+            ## expect configuration to be in a file called xx.json in the package's inst/configurations directory
+            cfile <- system.file("configurations", paste0(z$installation, ".json"), package = "livingatlases")
+            if (!nzchar(cfile)) {
+                ## file not found
+                stop("no configuration information was found for installation = \"", z$installation, "\"")
+            }
+            tryCatch(new_info <- jsonlite::fromJSON(cfile), error = function(e) stop("could not read configuration for installation \"", z$installation, "\": is the json file present in and valid?"))
         } else {
             ## installation details may have been provided as a list
             stop("direct installation configuration not coded yet")

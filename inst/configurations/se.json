@@ -1,0 +1,12 @@
+{"max_occurrence_records": 500000,
+ "server_max_url_length": 8150,
+ "base_url_spatial": "https://spatial.ala.org.au/layers-service/",
+ "base_url_bie": "http://bie.ala.org.au/ws/",
+ "base_url_biocache": "https://bioatlas.se/biocache-service/",
+ "biocache_version": "1.9",
+ "base_url_alaspatial": "http://spatial.ala.org.au/alaspatial/ws/",
+ "base_url_images": "https://bioatlas.se/images/",
+ "base_url_logger": "https://bioatlas.se/logger-service/service/logger/",
+ "base_url_fieldguide": "http://fieldguide.ala.org.au/",
+ "base_url_lists": "http://lists.ala.org.au/ws/"
+}
