@@ -3,7 +3,6 @@
 \docType{package}
 \name{livingatlases}
 \alias{livingatlases}
-\alias{livingatlases-package}
 \title{\pkg{livingatlases}}
 \description{
 This package enables the R community to access data and tools hosted by the 

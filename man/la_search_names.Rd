@@ -4,8 +4,13 @@
 \alias{la_search_names}
 \title{Lookup of taxonomic names}
 \usage{
-la_search_names(taxa = c(), vernacular = FALSE, guids_only = FALSE,
-  occurrence_count = FALSE, output_format = "simple")
+la_search_names(
+  taxa = c(),
+  vernacular = FALSE,
+  guids_only = FALSE,
+  occurrence_count = FALSE,
+  output_format = "simple"
+)
 }
 \arguments{
 \item{taxa}{string: a single name or vector of names}

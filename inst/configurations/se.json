@@ -1,12 +1,12 @@
 {"max_occurrence_records": 500000,
  "server_max_url_length": 8150,
- "base_url_spatial": "https://spatial.ala.org.au/layers-service/",
- "base_url_bie": "http://bie.ala.org.au/ws/",
- "base_url_biocache": "https://bioatlas.se/biocache-service/",
- "biocache_version": "1.9",
- "base_url_alaspatial": "http://spatial.ala.org.au/alaspatial/ws/",
- "base_url_images": "https://bioatlas.se/images/",
- "base_url_logger": "https://bioatlas.se/logger-service/service/logger/",
- "base_url_fieldguide": "http://fieldguide.ala.org.au/",
- "base_url_lists": "http://lists.ala.org.au/ws/"
+ "base_url_spatial": "https://spatial.bioatlas.se/ws/",
+ "base_url_bie": "https://species.bioatlas.se/ws/",
+ "base_url_biocache": "https://records.bioatlas.se/ws/",
+ "base_url_biocache_download" : "https://records.bioatlas.se/ws/biocache-download/",
+ "biocache_version": "2.2.3",
+ "base_url_alaspatial": "https://spatial.bioatlas.se/ws/",
+ "base_url_images": "https://images.bioatlas.se/",
+ "base_url_logger": "https://logger.bioatlas.se/service/logger/",
+ "base_url_lists": "https://lists.bioatlas.se/ws/"
 }

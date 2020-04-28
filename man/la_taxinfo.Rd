@@ -4,8 +4,13 @@
 \alias{la_taxinfo}
 \title{Download taxonomic data}
 \usage{
-la_taxinfo(query, fq, fields, verbose = la_config()$verbose,
-  use_data_table = TRUE)
+la_taxinfo(
+  query,
+  fq,
+  fields,
+  verbose = la_config()$verbose,
+  use_data_table = TRUE
+)
 }
 \arguments{
 \item{query}{string: (optional) query of the form field:value (e.g. "genus:Macropus") or a free text search ("Alaba vibex")}

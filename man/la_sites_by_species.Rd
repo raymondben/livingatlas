@@ -4,8 +4,13 @@
 \alias{la_sites_by_species}
 \title{Sites by species}
 \usage{
-la_sites_by_species(taxon, wkt, gridsize = 0.1, SPdata.frame = FALSE,
-  verbose = la_config()$verbose)
+la_sites_by_species(
+  taxon,
+  wkt,
+  gridsize = 0.1,
+  SPdata.frame = FALSE,
+  verbose = la_config()$verbose
+)
 }
 \arguments{
 \item{taxon}{string: the identifier to get the species data from the biocache. E.g. "genus:Macropus". See \code{la_fields("occurrence_stored")} for valid field names}

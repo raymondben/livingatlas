@@ -4,10 +4,22 @@
 \alias{la_occurrences}
 \title{Get occurrence data}
 \usage{
-la_occurrences(taxon, wkt, fq, fields, extra, qa, method = "indexed", email,
-  download_reason_id = la_config()$download_reason_id, reason,
-  verbose = la_config()$verbose, record_count_only = FALSE,
-  use_layer_names = TRUE, use_data_table = TRUE)
+la_occurrences(
+  taxon,
+  wkt,
+  fq,
+  fields,
+  extra,
+  qa,
+  method = "indexed",
+  email,
+  download_reason_id = la_config()$download_reason_id,
+  reason,
+  verbose = la_config()$verbose,
+  record_count_only = FALSE,
+  use_layer_names = TRUE,
+  use_data_table = TRUE
+)
 }
 \arguments{
 \item{taxon}{string: (optional) query of the form field:value (e.g. "genus:Macropus") or a free text search (e.g. "macropodidae"). Note that
@@ -79,10 +91,10 @@ la_config(installation = "uk")
 x <- occurrences(taxon = "genus:Sialis", wkt = "POLYGON((-3 56,-4 56,-4 57,-3 57,-3 56))",
   download_reason_id = 10, qa = "none", verbose = TRUE)
 
-y <- occurrences(taxon = "taxon_name:\\"Sialis lutaria\\"",
+y <- occurrences(taxon = "taxon_name:\"Sialis lutaria\"",
   fields = c("latitude", "longitude", "collector"), download_reason_id = 10)
 
-occurrences(taxon="genus:\\"Sialis\\"", fields = c("latitude", "longitude", "collector"),
+occurrences(taxon="genus:\"Sialis\"", fields = c("latitude", "longitude", "collector"),
   qa = "none", fq = "collector:Unknown", download_reason_id = 10)
 }
 }

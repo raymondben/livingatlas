@@ -4,8 +4,12 @@
 \alias{la_fieldguide}
 \title{Generate a PDF field guide using the Living Atlas field guide generator}
 \usage{
-la_fieldguide(guids, title = "Field guide", filename = tempfile(fileext =
-  ".pdf"), overwrite = FALSE)
+la_fieldguide(
+  guids,
+  title = "Field guide",
+  filename = tempfile(fileext = ".pdf"),
+  overwrite = FALSE
+)
 }
 \arguments{
 \item{guids}{character: vector of GUIDs}

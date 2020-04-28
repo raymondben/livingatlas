@@ -4,8 +4,15 @@
 \alias{la_search_fulltext}
 \title{Full text search}
 \usage{
-la_search_fulltext(query, fq, output_format = "simple", start, page_size,
-  sort_by, sort_dir)
+la_search_fulltext(
+  query,
+  fq,
+  output_format = "simple",
+  start,
+  page_size,
+  sort_by,
+  sort_dir
+)
 }
 \arguments{
 \item{query}{string: the search term}
